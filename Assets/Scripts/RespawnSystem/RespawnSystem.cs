@@ -9,6 +9,8 @@ public class RespawnSystem : MonoBehaviour
     [SerializeField]
     private GameObject SpawnPointObject;
 
+    public bool RespawnPlayerAtDepth;
+
     // Start is called before the first frame update
     void Start()
     {

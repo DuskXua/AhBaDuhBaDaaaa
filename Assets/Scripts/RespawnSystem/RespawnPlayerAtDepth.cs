@@ -2,16 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(RespawnSystem))]
 public class RespawnPlayerAtDepth : MonoBehaviour
 {
-    public RespawnSystem respawnSystem;
-    public GameObject RespawnPoint;
+    private RespawnSystem respawnSystem;
     public float KillDepth = -100f;
+
+    private void Start()
+    {
+        respawnSystem = GetComponent<RespawnSystem>();
+    }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (transform.position.y <= KillDepth)
+        if (respawnSystem.Player.transform.position.y <= KillDepth)
         {
             respawnSystem.RespawnPlayer();
         }
