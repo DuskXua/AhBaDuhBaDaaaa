@@ -13,12 +13,12 @@ GameObject:
   - component: {fileID: 5794050969447309266}
   - component: {fileID: 1424692989083547820}
   - component: {fileID: 1424692989083547808}
-  - component: {fileID: 1737473347}
   - component: {fileID: 1253038658430355174}
   - component: {fileID: 4518830796317193721}
+  - component: {fileID: 6631156752882892164}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,21 +101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fef0c16af1ffe9a48863524fbcdfe5ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1737473347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424692989083547809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82daec314c7dd204a8c0edbac8a7aa4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnSystem: {fileID: 0}
-  RespawnPoint: {fileID: 0}
-  KillDepth: -100
 --- !u!114 &1253038658430355174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +130,32 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &6631156752882892164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424692989083547809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4730f03f1395c41b99cd998886f241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  strength: 0
+  intelligence: 0
+  accuracy: 0
+  vitality: 0
+  hp: 0
+  ap: 0
+  sp: 0
+  hpMax: 0
+  apMax: 0
+  spMax: 0
+  hpRegen: 0
+  apRegen: 0
+  spRegen: 0
 --- !u!1 &1424692989309189452
 GameObject:
   m_ObjectHideFlags: 0
