@@ -22,6 +22,15 @@ public class InputManager : MonoBehaviour
         onFoot.Jump.performed += ctx => motor.Jump();
         onFoot.Crouch.performed += ctx => motor.Crouch();
         onFoot.Sprint.performed += ctx => motor.Sprint();
+        
+        //Left Click
+        //onFoot.Primary.performed += ctx => Action();
+        //Right Click
+        //onFoot.Secondary.performed += ctx => Action();
+        //Scroll Up
+        //onFoot.SwitchUp.performed += ctx => Action();
+        //Scroll Down
+        //onFoot.SwitchDown.performed += ctx => Action();
     }
 
 

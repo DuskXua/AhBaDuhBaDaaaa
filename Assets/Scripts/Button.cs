@@ -9,6 +9,6 @@ public class Button : Interactable
     protected override void Interact()
     {
         active = !active;
-        platform.gameObject.SetActive(active);
+        //platform.gameObject.SetActive(active);
     }
 }
